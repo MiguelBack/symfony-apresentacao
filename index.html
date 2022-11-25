@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("a").on("click", function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $("html, body").animate({
+                            scrollTop: $(hash).offset().top,
+                        },
+                        1000,
+                        function() {
+                            window.location.hash = hash;
+                        }
+                    );
+                }
+            });
+        });
+    </script>
+
+    <title>Symfony</title>
+</head>
+
+<body>
+    <div class="mainText" id="section1">
+        <h1>Symfony</h1>
+
+        <a href="#section2">
+            <button class="square-bottom"></button>
+        </a>
+    </div>
+
+    <div class="mainText1" id="section2">
+        <a href="#section1">
+            <button class="square-top"></button>
+        </a>
+
+        <h1>Conteúdo</h1>
+
+        <a href="#section3">
+            <button class="square-bottom"></button>
+        </a>
+
+    </div>
+
+
+    </div>
+</body>
+
+</html>

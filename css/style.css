@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+*::selection {
+    background-color: #6bf200;
+    color: #1a2327;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 100;
+    color: #f2f2f2;
+    letter-spacing: 25px;
+    font-size: 35pt;
+}
+
+.square-bottom,
+.square-top {
+    background-image: url("../img/seta.svg");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: #6bf200;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.square-bottom {
+    bottom: 50px;
+}
+
+.square-top {
+    top: 50px;
+}
+
+.square-bottom:hover {
+    transform: rotate(90deg);
+}
+
+.square-top:hover {
+    transform: rotate(-90deg);
+}
+
+.mainText {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1a2327;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.mainText1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #263238;
+    width: 100%;
+    height: 100vh;
+    color: #f2f2f2;
+    letter-spacing: 10px;
+    font-size: 20pt;
+}
