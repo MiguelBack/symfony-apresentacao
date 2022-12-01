@@ -63,11 +63,10 @@
                 <li> <a href="#section3"> O que é? </a></li>
                 <li> <a href="#section4">Para que serve?</a></li>
                 <li> <a href="#section5">Vantagens e Desvantagens</a></li>
-                <li><a href="#section6">Recursos Oferecidos</a></li>
-                <li><a href="#section7">Instalação</a></li>
-                <li><a href="#section8">Códigos</a></li>
-                <li><a href="#section9">Quando Usar?</a></li>
-                <li><a href="#section10">Recomendações</a></li>
+                <li><a href="#section6">Instalação</a></li>
+                <li><a href="#section7">Códigos</a></li>
+                <li><a href="#section8">Quando Usar?</a></li>
+                <li><a href="#section9">Recomendações</a></li>
             </ul>
         </div>
 
@@ -91,8 +90,7 @@
             <p></p>
             <p class="yellow-p">
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae ipsum id aliquam. Donec nec justo odio. In id justo maximus ligula venenatis tristique quis egestas mi. Suspendisse tempus justo eu felis congue maximus. Fusce in suscipit
-                metus. Integer interdum id ligula ac maximus. Praesent ac justo nisl.
+                Symphony é um poderoso framework full stack multiplataforma para desenvolvimento php de alta performance, ele é <u>open source</u>, usa a arquitetura <u>MVC</u> e conta com uma documentação extensa e bem detalhada.
             </p>
 
         </div>
@@ -119,8 +117,8 @@
 
             <p class="dark-p">
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae ipsum id aliquam. Donec nec justo odio. In id justo maximus ligula venenatis tristique quis egestas mi. Suspendisse tempus justo eu felis congue maximus. Fusce in suscipit
-                metus. Integer interdum id ligula ac maximus. Praesent ac justo nisl.
+                Serve para a aplicação dos <u>princípios ágeis</u> do desenvolvimento (<u>DRY</u>, <u>KISS</u> ou
+                <u>XP</u>), com foco nas <u>regras de negócio</u>.
             </p>
         </div>
 
@@ -142,13 +140,24 @@
 
             <h1> Vantagens e Desvantagens</h1>
 
-            <p></p>
-
-            <p class="yellow-p">
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae ipsum id aliquam. Donec nec justo odio. In id justo maximus ligula venenatis tristique quis egestas mi. Suspendisse tempus justo eu felis congue maximus. Fusce in suscipit
-                metus. Integer interdum id ligula ac maximus. Praesent ac justo nisl.
+            <p class="dark-p">
             </p>
+            <ul>
+
+                <h4>Vantagens</h4>
+                <li>
+                    Flexibilidade;
+                </li>
+                <li>Arquitetura MVC;</li>
+
+                <li> Documentação.</li>
+                <p class="dark-p">
+                </p>
+                <h4>Desvantagens</h4>
+                <li>Relativo maior nível de complexidade.</li>
+
+
+            </ul>
         </div>
 
         <a href="#section6">
@@ -158,33 +167,44 @@
 
 
 
-
     <div class="mainText1" id="section6">
 
         <a href="#section5">
             <button class="square-top"></button>
         </a>
 
-
         <div class="conteudo">
 
-            <h1> Recursos Oferecidos</h1>
-
-            <p></p>
+            <h1> Instalação</h1>
 
             <p class="dark-p">
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae ipsum id aliquam. Donec nec justo odio. In id justo maximus ligula venenatis tristique quis egestas mi. Suspendisse tempus justo eu felis congue maximus. Fusce in suscipit
-                metus. Integer interdum id ligula ac maximus. Praesent ac justo nisl.
             </p>
+            <ul>
+                <li>
+                    <a href="https://symfony.com/download" v target="_blank"> <u>Site oficial</u> </a>
+                </li>
+                <li> Criar uma variável de ambiente com o caminho do diretório instalado</li>
+
+                <li> Verificar se foi instalado corretamente <b>> symfony -V</b></li>
+                <li> Verificar se é possível rodar o framework <b>>symfony check:requirements</b>
+                </li>
+                <li> Dentro do diretório para criar o projeto <b>>symfony new SymfonyFirstApp --webapp</b>
+                </li>
+                <li> Iniciar o Apache no xampp</b>
+                </li>
+                <li> Iniciar o servidor Symfony (dentro do diretório do projeto) <b>>symfony server:start</b>
+                </li>
+
+                <li> Acessar <b>http://localhost:8000</b> (página padrão Symfony)
+                </li>
+            </ul>
+
         </div>
 
         <a href="#section7">
             <button class="square-bottom"></button>
         </a>
     </div>
-
-
 
 
     <div class="mainText2" id="section7">
@@ -195,15 +215,33 @@
 
         <div class="conteudo">
 
-            <h1> Instalação</h1>
-
+            <h1>Códigos</h1>
             <p></p>
+            <h4>Estrutura de Diretórios</h4>
+            <p></p>
+            <ul>
+                <li>
+                    public - front controller: o que é acessível pelo navegador (HTML, CSS, JS, imagens...);
+                </li>
+                <li>config - arquivos de configurações</li>
 
-            <p class="yellow-p">
+                <li>src - códigos PHP</li>
+                <li>vendor - dependências do projeto;
+                </li>
+                <li>bin - execução de tarefas do projeto por meio do cmd (controladores, arquivos...);
+                </li>
+                <li>migrations - estrutura do banco de dados;
+                </li>
+                <li> templates - frameworks do projeto;
+                </li>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae ipsum id aliquam. Donec nec justo odio. In id justo maximus ligula venenatis tristique quis egestas mi. Suspendisse tempus justo eu felis congue maximus. Fusce in suscipit
-                metus. Integer interdum id ligula ac maximus. Praesent ac justo nisl.
-            </p>
+                <li> translations - traduções, caso o projeto tenha mais de um idioma;
+                </li>
+
+                <li> var - permissões de escrita (cache.log);
+                </li>
+            </ul>
+
         </div>
 
         <a href="#section8">
@@ -223,22 +261,37 @@
         <div class="conteudo">
 
             <h1>Códigos</h1>
-
             <p></p>
+            <h4>Criando um usuário...</h4>
+            <p></p>
+            <ul>
+                <li>
+                    <b>>symfony console make:user</b>
+                </li>
+                <li>
+                    Informar nome da classe do usuário;
+                </li>
+                <li>
+                    Informar se será salvo no banco de dados padrão;
+                </li>
+                <li>
+                    Informar qual atributo será único para cada usuário (username, email, id...);
+                </li>
+                <li>
+                    Informar se a senha será criptografada.
+                </li>
 
-            <p class="dark-p">
+                <li>
+                    Pronto! Entidade usuário criada =)
+                </li>
+            </ul>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae ipsum id aliquam. Donec nec justo odio. In id justo maximus ligula venenatis tristique quis egestas mi. Suspendisse tempus justo eu felis congue maximus. Fusce in suscipit
-                metus. Integer interdum id ligula ac maximus. Praesent ac justo nisl.
-            </p>
         </div>
 
         <a href="#section9">
             <button class="square-bottom"></button>
         </a>
     </div>
-
-
 
 
     <div class="mainText2" id="section9">
@@ -249,15 +302,57 @@
 
         <div class="conteudo">
 
-            <h1>Quando usar?</h1>
+            <h1>Quem utiliza?</h1>
 
             <p></p>
 
-            <p class="yellow-p">
+            <ul>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae ipsum id aliquam. Donec nec justo odio. In id justo maximus ligula venenatis tristique quis egestas mi. Suspendisse tempus justo eu felis congue maximus. Fusce in suscipit
-                metus. Integer interdum id ligula ac maximus. Praesent ac justo nisl.
-            </p>
+                <h4>Grandes Empresas</h4>
+
+
+                <li>
+                    Facebook Ads;
+                </li>
+                <li>
+                    Spotify - gerenciar as contas dos usuários;
+
+                </li>
+                <li>
+                    Blablacar - utilizado na plataforma;
+                </li>
+                <li>
+                    Trivago - funcionalidades;
+                </li>
+
+                <li>
+                    Dailymotion - feito em Symfony.
+
+                </li>
+
+                <h4>Frameworks</h4>
+
+                <li>
+                    Laravel Framework;
+                </li>
+
+                <li>
+                    Yii Framework;
+                </li>
+
+                <li>
+                    Drupal;
+                </li>
+
+                <li>
+                    Joomla
+                </li>
+                <li>
+                    Magento
+                </li>
+
+
+            </ul>
         </div>
 
         <a href="#section10">
@@ -279,12 +374,31 @@
             <h1>Recomendações</h1>
 
             <p></p>
+            <ul>
 
-            <p class="dark-p">
+                <li>
+                    Curso -
+                    <a href="https://www.treinaweb.com.br/curso/symfony-fundamentos" target="_blank">Fundamentos do
+                        Symfony
+                        (TreinaWeb)</a>;
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae ipsum id aliquam. Donec nec justo odio. In id justo maximus ligula venenatis tristique quis egestas mi. Suspendisse tempus justo eu felis congue maximus. Fusce in suscipit
-                metus. Integer interdum id ligula ac maximus. Praesent ac justo nisl.
-            </p>
+                </li>
+                <li>
+                    Curso - <a href="https://www.alura.com.br/formacao-symfony-e-doctrines" target="_blank">Formação
+                        Symfony e Doctrines
+                        (Alura)</a>;
+
+                </li>
+                <li>
+                    Livro - Orquestrando aplicações PHP com Symfony;
+
+                </li>
+                <li>
+                    Documentação -
+                    <a href="https://symfony.com/doc/current/index.html" target="_blank"> Site Oficial</a>.
+                </li>
+
+            </ul>
         </div>
 
 
